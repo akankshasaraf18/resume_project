@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: repeating-linear-gradient(
+    45deg,
+    #f4f4f4,
+    #f4f4f4 20px,
+    #fff 20px,
+    #fff 40px
+  );
+            
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            border:1px solid  black;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #333;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+            color: #555;
+        }
+            
+        .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+    top: 10px;
+    object-fit: cover;
+}
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar-fill {
+            height: 10px;
+            background-color: #3498db;
+            border-radius: 5px;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .education-list,
+        .work-experience-list {
+            margin-bottom: 0;
+            cursor: pointer;
+            
+        }
+
+        .education-item,
+        .work-experience-item {
+            padding: 15px;
+            border: 2px solid rgb(2, 2, 66);
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .education-item h4,
+        .work-experience-item h4 {
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .education-item p,
+        .work-experience-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .hobby {
+            width: 23%;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #04033f;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .hobby:hover {
+           background-color: rgb(4, 4, 67);
+           color: white;
+           cursor: pointer;
+        }
+
+        .hobby i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Akanksha Saraf</h1>
+            <h2>Web Developer</h2>
+            <img src="images/ak.png"  class="profile-photo">
+        </div>
+
+        <div class="section">
+            <h3>CONTACT</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +91 9********<br>
+                <i class="fas fa-envelope"></i> akankshasaraf.2005@gmail.com<br>
+                <i class="fas fa-map-marker-alt"></i> Jalgaon, Maharashtra, India</p>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h3>SKILLS</h3>
+            <div class="skill-list">
+                <div class="skill">
+                    <p>Html</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Javascript</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Java</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>EDUCATION</h3>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h4>2021-2024</h4>
+                    <h4>Diploma In Computer Engineering</h4>
+                    <p>Government Polytechnic, Jalgaon</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>WORK EXPERIENCE</h3>
+            <ul class="work-experience-list">
+                <li class="work-experience-item">
+                    <h4>June 2023</h4>
+                    <h4>Full Stack Development In Java Internship</h4>
+                    <p>Passion Software, Jalgaon</p>
+                    <p>1 month</p>
+                </li>
+                <li class="work-experience-item">
+                    <h4>June 2024</h4>
+                    <h4>Web Development Intern</h4>
+                    <p>Unified Mentor</p>
+                    <p>1 month</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>HOBBIES</h3>
+            <div class="hobbies">
+                <div class="hobby">
+                    <i class="fas fa-music"></i>
+                    <p>Coding</p>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-camera"></i>
+                    <p>Reading</p>
+                </div>
+                <div class="hobby">
+                    <i class="fas fa-gamepad"></i>
+                    <p>Singing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
